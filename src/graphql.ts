@@ -8,7 +8,7 @@ import BusDataSource from "./datasources/BusDataSource";
 
 const exampleQuery = `# Welcome to the Barcelona urban mobility GraphQL API
 #
-# Here is an example query to get you started, 
+# Here is an example query to get you started,
 # which gets the closest bike station from the design museum of BCN,
 # and the first three metro stations from the L4,
 # simply press play to fetch the information, or refer to the docs tab on the left
@@ -60,6 +60,7 @@ export const server: ApolloServer = new ApolloServer({
       },
     ],
   },
+  cors: true,
   cacheControl: {
     defaultMaxAge: 3400,
   },
