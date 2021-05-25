@@ -73,4 +73,4 @@ export const server: ApolloServer = new ApolloServer({
   plugins: [responseCachePlugin()],
 });
 
-exports.handler = server.createHandler();
+exports.handler = server.createHandler({ cors: { origin: '*', credentials: true } });
