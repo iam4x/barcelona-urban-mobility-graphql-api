@@ -6,7 +6,13 @@
   from = "/"
   to = "/graphql"
 
+  [redirects.headers]
+     Access-Control-Allow-Origin = "*"
+
 [[redirects]]
   from = "/graphql"
   to = "/.netlify/functions/graphql"
   status = 200
+
+  [redirects.headers]
+     Access-Control-Allow-Origin = "*"

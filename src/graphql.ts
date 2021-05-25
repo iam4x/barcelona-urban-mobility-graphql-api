@@ -60,7 +60,6 @@ export const server: ApolloServer = new ApolloServer({
       },
     ],
   },
-  cors: true,
   cacheControl: {
     defaultMaxAge: 3400,
   },
